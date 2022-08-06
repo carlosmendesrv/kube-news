@@ -34,6 +34,7 @@ jobs:
 
   CD:
     runs-on: ubuntu-20.04
+    needs: [CI]
     steps:
       - uses: actions/checkout@v3
       - name: Kubernetes Set Context
